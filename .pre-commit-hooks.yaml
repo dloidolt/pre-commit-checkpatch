@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: GPL-2.0
+#
+# (c) 2024 Dominik Loidolt
+-   id: checkpatch-files
+    name: check files for the Linux kernel coding style
+    description: sets a standard for formatting C files.
+    entry: checkpatch.pl --no-tree --file
+    language: script
+    types: [c]
+    stages: [pre-commit, pre-push, manual]
+    minimum_pre_commit_version: 3.2.0
