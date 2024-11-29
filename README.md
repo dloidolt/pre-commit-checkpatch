@@ -34,7 +34,7 @@ repos:
     hooks:
       - id: checkpatch-files
         args:
-          - '--ignore=SPDX_LICENSE_TAG,LEADING_SPACE'
+          - '--ignore=SPDX_LICENSE_TAG,PREFER_DEFINED_ATTRIBUTE_MACRO'
 ```
 
 ### In-Place Fixes
@@ -49,7 +49,6 @@ repos:
       - id: checkpatch-files
         args:
           - '--fix-inplace'
-          - '--ignore=SPDX_LICENSE_TAG,LEADING_SPACE'
 ```
 
 ## License
